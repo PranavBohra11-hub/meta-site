@@ -199,3 +199,258 @@ body {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Jim's Meta's Platform CSS */
+
+.Meta-Platform-Head {
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.Product-section {
+    border: 1px solid transparent;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    background-image: url(https://cdn.vectorstock.com/i/500p/41/14/meta-social-media-logo-symbol-design-vector-47794114.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Product-Cards-Zone {
+    border: 1px solid transparent;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.FirstCard,
+.SecondCard,
+.ThirdCard,
+.FourthCard,
+.FifthCard,
+.SixthCard {
+    border: 4px solid rgba(128, 128, 128, 0.821);
+    height: 450px;
+    width: 300px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0px 0px 15px 0.3px rgba(0, 0, 0, 0.586);
+}
+
+.FirstCard {
+    background-image: url(https://i.ytimg.com/vi/RydG5UU1hZQ/maxresdefault.jpg);
+}
+
+.SecondCard {
+    background-image: url(https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/meta-ads-whatsapp-copy.jpg?quality=90&strip=all&crop=21.875,0,56.25,100);
+}
+
+.ThirdCard {
+    background-image: url(https://blog.hootsuite.com/wp-content/uploads/2021/03/Instagram-reels.png);
+}
+
+.FourthCard {
+    background-image: url(https://www.mymobileindia.com/wp-content/uploads/2024/11/image-345.png);
+}
+
+.FifthCard {
+    background-image: url(https://images.bhaskarassets.com/web2images/1884/2025/01/25/threads-2_1737793336.jpg);
+}
+
+.SixthCard {
+    background-image: url(https://imageio.forbes.com/specials-images/imageserve/615e91093dd87c85747d4adb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds);
+}
+
+.DataZone {
+    font-size: 10px;
+    border: 2px solid transparent;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.899);
+    z-index: 11;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.DataZone button {
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.DataZone button:first-child {
+    background-color: #0866FF;
+    color: white;
+}
+
+.DataZone button:last-child {
+    border: 1px solid #0866FF;
+}
+
+.DataZone button:last-child:hover {
+    background-color: #0866FF;
+    color: white;
+}
+
+.CardLayer {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+
+.Logo,
+.LogoTwo,
+.LogoThree,
+.LogoFour,
+.LogoFive,
+.LogoSix {
+    border: 1px solid transparent;
+    height: 30%;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 1s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    background-color: #0866FF;
+}
+
+.LogoTwo {
+    background-color: #25D366;
+}
+
+.LogoThree {
+    background: linear-gradient(135deg,
+            #F58529 0%,
+            #DD2A7B 35%,
+            #8134AF 65%,
+            #515BD4 100%);
+
+}
+
+.LogoFour {
+    background: linear-gradient(135deg,
+            #00B2FF,
+            #006AFF);
+
+}
+
+.LogoFive {
+    background-color: rgb(59, 59, 59);
+}
+
+.LogoSix {
+    background-color: #00B2FF;
+}
+
+
+.Logo img,
+.LogoTwo img,
+.LogoThree img,
+.LogoFour img,
+.LogoFive img,
+.LogoSix img {
+    width: 50px;
+    height: 50px;
+}
+
+.Content {
+    border: 1px solid transparent;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: 1s all ease;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.CardLayer:hover .Logo {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+.CardLayer:hover .LogoTwo {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+.CardLayer:hover .LogoThree {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+.CardLayer:hover .LogoFour {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+.CardLayer:hover .LogoFive {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+.CardLayer:hover .LogoSix {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+.CardLayer:hover .Content {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+.Text {
+    border: 1px solid transparent;
+    transform: translateY(-60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Text img {
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.innerContent {
+    color: black;
+    font-size: 12px;
+}
