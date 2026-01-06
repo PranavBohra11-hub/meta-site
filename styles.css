@@ -220,6 +220,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .Product-Cards-Zone {
@@ -453,4 +455,151 @@ body {
 .innerContent {
     color: black;
     font-size: 12px;
+}
+
+
+/* David's Part of Metaverse Section */
+
+.Metaverse-Section {
+    width: 100vw;
+}
+
+.MetaCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.MetaVerse-Head {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    color: #0866FF;
+}
+
+.AR-Section,
+.VR-Section,
+.BlockChain-Section,
+.AI-Section {
+    border: 4px solid rgba(63, 63, 63, 0.358);
+    height: 600px;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0.2px rgba(40, 40, 40, 0.663);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.AR-Section {
+    background-image: url(https://substackcdn.com/image/fetch/$s_!mleK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3f756c0b-f46f-4622-9f9d-d9e2f8a8aee7_3000x1687.jpeg);
+}
+
+.VR-Section {
+    background-image: url(https://xrsource.net/wp-content/uploads/2023/06/Mark-Zuckerberg-Quest-3.jpg);
+}
+
+.BlockChain-Section {
+    background-image: url(https://static.toiimg.com/thumb/msid-121406698,width-1280,height-720,resizemode-4/121406698.jpg);
+}
+
+.AI-Section {
+    background-image: url(https://www.reuters.com/resizer/v2/ADNNFEFMDRNXHP5KHMMOYI4KZA.jpg?auth=2688ee93ff0fda557ad13c79d0751ac2059238421e5f2cc59ae3d75756ecc221&width=1920&quality=80);
+}
+
+.Layer {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    background-color: #02193998;
+    overflow: hidden;
+    position: relative;
+}
+
+.Head {
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+
+.TopicContent {
+    border: 0px solid rgba(128, 128, 128, 0.508);
+    box-shadow: 0px 0px 10px 0.3px rgba(1, 57, 130, 0.819);
+    width: 80%;
+    margin: 40px auto;
+    height: 350px;
+    border-radius: 20px;
+    background-color: rgba(5, 18, 35, 0.921);
+    overflow-y: auto;
+}
+
+
+/* Scrollbar width */
+.TopicContent::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Scrollbar track */
+.TopicContent::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.TopicContent div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.TopicContent div img {
+    width: 50%;
+    height: 150px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.TopicContent div h2 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.TopicContent div p {
+    text-align: center;
+    width: 80%;
+    color: rgb(178, 178, 178);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Layer Button {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    padding: 2px 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0866FF;
+    color: white;
+    box-shadow: 0px 0px 10px 0.5px black;
+}
+
+
+@media (min-width: 968px) {
+    .MetaCards {
+        display: none;
+    }
 }
